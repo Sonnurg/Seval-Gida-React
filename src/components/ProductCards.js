@@ -1,7 +1,7 @@
 // src/components/ProductCards.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ProductCard from './ProductCard';
+import ProductCards from './ProductCards';
 import { products, categories, getFeaturedProducts, getBestsellerProducts } from '../data/products';
 
 const ProductCards = ({ 
