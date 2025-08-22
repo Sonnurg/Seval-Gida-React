@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react
 import AOS from 'aos';
 import { HelmetProvider } from 'react-helmet-async';
 
-// Import CSS
+// App.js veya index.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './assets/css/main.css'; // En sonda!
 import 'aos/dist/aos.css';
-import './assets/css/main.css';
 
 // Import Components
 import Header from './components/Header';

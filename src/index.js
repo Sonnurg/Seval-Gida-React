@@ -5,9 +5,11 @@ import './assets/css/main.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Bootstrap CSS import
+// App.js veya index.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import './assets/css/main.css'; // En sonda!
+import 'react-toastify/dist/ReactToastify.css';
 
 // Get the root element
 const container = document.getElementById('root');
