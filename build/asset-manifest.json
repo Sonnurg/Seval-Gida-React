@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seval-gida-website/static/css/main.90f13e0f.css",
-    "main.js": "/seval-gida-website/static/js/main.adb636c3.js",
+    "main.css": "/seval-gida-website/static/css/main.2c070915.css",
+    "main.js": "/seval-gida-website/static/js/main.0ed291ff.js",
     "static/js/96.4a9b409d.chunk.js": "/seval-gida-website/static/js/96.4a9b409d.chunk.js",
     "static/js/818.c28036b7.chunk.js": "/seval-gida-website/static/js/818.c28036b7.chunk.js",
     "static/js/471.a1865835.chunk.js": "/seval-gida-website/static/js/471.a1865835.chunk.js",
@@ -15,8 +15,8 @@
     "static/media/bootstrap-icons.woff?": "/seval-gida-website/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/seval-gida-website/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/seval-gida-website/index.html",
-    "main.90f13e0f.css.map": "/seval-gida-website/static/css/main.90f13e0f.css.map",
-    "main.adb636c3.js.map": "/seval-gida-website/static/js/main.adb636c3.js.map",
+    "main.2c070915.css.map": "/seval-gida-website/static/css/main.2c070915.css.map",
+    "main.0ed291ff.js.map": "/seval-gida-website/static/js/main.0ed291ff.js.map",
     "96.4a9b409d.chunk.js.map": "/seval-gida-website/static/js/96.4a9b409d.chunk.js.map",
     "818.c28036b7.chunk.js.map": "/seval-gida-website/static/js/818.c28036b7.chunk.js.map",
     "471.a1865835.chunk.js.map": "/seval-gida-website/static/js/471.a1865835.chunk.js.map",
@@ -29,7 +29,7 @@
     "464.1a92dae1.chunk.js.map": "/seval-gida-website/static/js/464.1a92dae1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90f13e0f.css",
-    "static/js/main.adb636c3.js"
+    "static/css/main.2c070915.css",
+    "static/js/main.0ed291ff.js"
   ]
 }
