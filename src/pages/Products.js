@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import  ProductCard from '../components/ProductCards'
+import  ProductCard from '../components/ProductCard';
 import { products, categories, getProductsByCategory, searchProducts, getCategoryBySlug } from '../data/products';
 
 const Products = () => {

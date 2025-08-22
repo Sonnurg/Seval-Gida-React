@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getProductBySlug, getProductsByCategory } from '../data/products';
-import ProductCard from '../components/ProductCards';
+import ProductCard from '../components/ProductCard';
 
 const ProductDetail = () => {
   const { slug } = useParams();
