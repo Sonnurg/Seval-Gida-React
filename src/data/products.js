@@ -123,4 +123,118 @@ export const products = [
       "Şeker Oranı": "Düşük",
       "Menşei": "Malatya"
     }
-  }]
+  },
+  {
+    id: 4,
+    name: "Karışık Turşu",
+    slug: "karisik-tursu",
+    category: "Turşu",
+    categorySlug: "tursu",
+    price: 69.99,
+    description: "Geleneksel yöntemlerle hazırlanmış karışık sebze turşusu. Doğal sirke ile.",
+    longDescription: "Havuç, lahana, biber, salatalık ve daha birçok taze sebzenin geleneksel yöntemlerle turşuya dönüştürülmesi. Doğal sirke ve tuz kullanılmıştır.",
+    image: "/api/placeholder/400/400",
+    images: [
+      "/api/placeholder/400/400",
+      "/api/placeholder/400/400"
+    ],
+    inStock: true,
+    featured: false,
+    bestseller: false,
+    rating: 4.4,
+    reviewCount: 45,
+    tags: ["geleneksel", "karışık", "doğal sirke"],
+    specifications: {
+      "Ağırlık": "720g",
+      "İçerik": "Karışık Sebze",
+      "Sirke Tipi": "Doğal",
+      "Saklama": "Serin yer"
+    }
+  },
+  {
+    id: 5,
+    name: "Domates Konservesi",
+    slug: "domates-konservesi",
+    category: "Konserve",
+    categorySlug: "konserve",
+    price: 45.99,
+    description: "Taze domateslerden hazırlanmış ev yapımı konserve. Koruyucu madde yok.",
+    longDescription: "Yaz aylarında toplanan en taze domateslerden, geleneksel yöntemlerle hazırlanmış konserve. Hiçbir yapay koruyucu madde içermez.",
+    image: "/api/placeholder/400/400",
+    images: [
+      "/api/placeholder/400/400"
+    ],
+    inStock: true,
+    featured: false,
+    bestseller: false,
+    rating: 4.3,
+    reviewCount: 28,
+    tags: ["domates", "ev yapımı", "koruyucu yok"],
+    specifications: {
+      "Ağırlık": "540g",
+      "İçerik": "Domates",
+      "Koruyucu": "Yok",
+      "Son Kullanma": "2 yıl"
+    }
+  },
+  {
+    id: 6,
+    name: "Acı Biber Salçası",
+    slug: "aci-biber-salcasi",
+    category: "Konserve",
+    categorySlug: "konserve",
+    price: 35.99,
+    description: "Yöresel acı biberlerden hazırlanmış geleneksel salça.",
+    longDescription: "Güneyde yetişen acı biberlerin özel işlenmesiyle hazırlanan geleneksel salça. Yemeklere tat ve renk katar.",
+    image: "/api/placeholder/400/400",
+    images: [
+      "/api/placeholder/400/400"
+    ],
+    inStock: true,
+    featured: false,
+    bestseller: true,
+    rating: 4.7,
+    reviewCount: 73,
+    tags: ["acı biber", "salça", "yöresel"],
+    specifications: {
+      "Ağırlık": "200g",
+      "Acılık": "Orta-Yüksek",
+      "Bölge": "Güney Anadolu",
+      "Saklama": "Kuru yer"
+    }
+  }
+];
+
+// Helper functions
+export const getProductsByCategory = (categorySlug) => {
+  return products.filter(product => product.categorySlug === categorySlug);
+};
+
+export const getFeaturedProducts = () => {
+  return products.filter(product => product.featured);
+};
+
+export const getBestsellerProducts = () => {
+  return products.filter(product => product.bestseller);
+};
+
+export const getProductBySlug = (slug) => {
+  return products.find(product => product.slug === slug);
+};
+
+export const searchProducts = (query) => {
+  const searchTerm = query.toLowerCase();
+  return products.filter(product => 
+    product.name.toLowerCase().includes(searchTerm) ||
+    product.description.toLowerCase().includes(searchTerm) ||
+    product.category.toLowerCase().includes(searchTerm) ||
+    product.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+  );
+};
+
+export const getCategoryBySlug = (slug) => {
+  return categories.find(category => category.slug === slug);
+};
+
+// Export default
+export default products;
