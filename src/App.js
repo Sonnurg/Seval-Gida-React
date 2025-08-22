@@ -1,6 +1,6 @@
 // src/App.js - Enhanced with Error Handling & SEO
 import React, { useEffect, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import AOS from 'aos';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -39,14 +39,14 @@ const NotFound = () => (
             The page you're looking for doesn't exist or has been moved.
           </p>
           <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-            <a href="/" className="btn btn-primary">
+            <Link to="/" className="btn btn-primary">
               <i className="bi bi-house me-2"></i>
               Go Home
-            </a>
-            <a href="/products" className="btn btn-outline-primary">
+            </Link>
+            <Link to="/products" className="btn btn-outline-primary">
               <i className="bi bi-grid me-2"></i>
               Browse Products
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -137,7 +137,7 @@ function AppContent() {
 function App() {
   return (
     <HelmetProvider>
-      <Router basename="/seval-gida-website">
+      <Router basename={process.env.PUBLIC_URL}>
         <AppContent />
       </Router>
     </HelmetProvider>

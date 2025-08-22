@@ -2,7 +2,7 @@
   "name": "seval-gida-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/seval-gida-website",
+  "homepage": "https://Sonnurg.github.io/seval-gida-website",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
