@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkseval_gida_website=self.webpackChunkseval_gida_website||[]).push([[205],{205:(e,s,a)=>{a.r(s),a.d(s,{default:()=>c});a(43);var l=a(579);const c=()=>(0,l.jsx)("div",{className:"page-title",children:(0,l.jsxs)("div",{className:"container",children:[(0,l.jsx)("h1",{children:"\u0130hracat"}),(0,l.jsx)("nav",{children:(0,l.jsxs)("ol",{className:"breadcrumbs",children:[(0,l.jsx)("li",{children:(0,l.jsx)("a",{href:"/",children:"Ana Sayfa"})}),(0,l.jsx)("li",{children:"\u0130hracat"})]})})]})})}}]);
+//# sourceMappingURL=205.a69c1e24.chunk.js.map
